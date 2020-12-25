@@ -1,6 +1,6 @@
 feature '# adds an entry' do
     scenario 'wants to add a diary entry to entry log' do
-        visit('/add')
+        visit('/')
         fill_in('title', with: "Entry Day 1")
         fill_in('title', with: "Today was Monday")
         click_button "Submit Entry"

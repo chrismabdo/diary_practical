@@ -11,3 +11,12 @@
   </label>
   <input type='submit' value='Submit Entry'>
 </form>
+<h3>Here is a list of your entries</h3>
+<ul>
+  <% @entries.each do |entry| %>
+    <li class="entry_log" id="entries-<%= entry.id %>">
+      <a href="<%= entry.body %>" target="_blank">
+        <%= entry.title %>
+      </a>
+      <% end%>
+</ul>
